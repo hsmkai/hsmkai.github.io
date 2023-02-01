@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhsmkai_github_io"]=self["webpackChunkhsmkai_github_io"]||[]).push([[443],{3022:(a,i,s)=>{s.r(i),s.d(i,{default:()=>k});var u=s(9269),e={class:"about"},t=(0,u._)("h1",null,"This is an about page",-1),h=[t];function n(a,i){return(0,u.wg)(),(0,u.iD)("div",e,h)}var r=s(7617);const b={},c=(0,r.Z)(b,[["render",n]]),k=c}}]);
+//# sourceMappingURL=about.817f3200.js.map
