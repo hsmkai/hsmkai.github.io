@@ -1,5 +1,5 @@
 <template>
-  <h1 class="topMargin">About</h1>
+  <h1 class="topMargin">Contacts</h1>
 </template>
 
 <style lang="scss" scoped>

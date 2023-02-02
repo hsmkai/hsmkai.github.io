@@ -9,16 +9,12 @@ const menuItem = [
     label: "About"
   },
   {
-    to: "/",
+    to: "/works",
     label: "Works"
   },
   {
-    to: "/about",
-    label: "SNS"
-  },
-  {
-    to: "/",
-    label: "Contact"
+    to: "/contacts",
+    label: "Contacts"
   }
 ]
 
