@@ -7,8 +7,7 @@ var tab = ref('')
 
 
 <template>
-  <q-layout>
-    
+  <q-layout>  
     <q-scroll-area style="height: 100vh; ">
       <q-header class="bg-transparent">
         <div class="div_mainButton">
