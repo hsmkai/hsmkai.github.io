@@ -14,7 +14,8 @@ var autoplay = ref(true)
     </q-card>
     <q-card flat class="caption-card">
       <h1>新世界へ旅立とう。</h1>
-      <p>コマンド、テクスチャ、音楽など。我々は様々なアプローチでちょっと新しいコンテンツをMinecraftを通して制作しています。</p>
+      <p>コマンド、テクスチャ、音楽など。</p>
+      <p>我々は様々なアプローチでちょっと新しいコンテンツをMinecraftを通して制作しています。</p>
     </q-card>
   </div>
     <q-carousel
