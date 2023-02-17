@@ -51,21 +51,19 @@ const menuItem = [
           <div class="bottom-div-main-btn gt-sm">
             <q-img src="@/assets/Home/logo.png" class="logo"/>
           </div>
-          <div class="footContents">
-            <!-- PC用フッター -->
-            <div class="gt-sm">
+          <q-space/>
+          <div>
+            <div class="footer gt-sm q-pa-md">
               <q-tabs v-model="tab" shrink>
                 <template v-for="(item, index) in menuItem" :key="index">
                   <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
                 </template>
               </q-tabs>
             </div>
-            <div class="q-pa-md">
-              <p class="rightAlign footnotesize">
-                このサイトのコンテンツは一部を除き『斜向』が著作権を有しています。 <br/>
-                これらの無断での転載，不正利用を断じて禁じます。 <br/>
-                Copyright ©斜向 All Rights Reserved.
-              </p>
+            <div class="rightAlign q-pt-md q-pr-md">
+              <!-- <p class="footnotesize">このサイトのコンテンツは一部を除き『斜向』が著作権を有しています。</p>
+              <p class="footnotesize">これらの無断での転載，不正利用を断じて禁じます。</p> -->
+              <p class="footnotesize">Copyright ©斜向 All Rights Reserved.</p>
             </div>
           </div>
         </q-toolbar>
@@ -98,8 +96,11 @@ const menuItem = [
   min-width: 150px;
 }
 
-.footContents {
-  margin: 0 0 0 auto;
+.footer {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: min-content;
 }
 .rightAlign {
   text-align: right;
