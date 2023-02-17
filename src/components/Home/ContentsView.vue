@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
-var slide = ref(1)
-var autoplay = ref(true)
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 </script>
 
 <template>
@@ -34,51 +33,27 @@ var autoplay = ref(true)
       </q-card-actions>
     </q-card>
   </div>
-    <q-carousel
-      v-model="slide"
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      :autoplay="autoplay"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
-      infinite
-      swipeable
-      animated
-      control-color="primary"
-      navigation
-      padding
-      arrows
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/mountains.jpg" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax1.jpg" />
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide :name="2" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax1.jpg" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/quasar.jpg" />
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide :name="3" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/quasar.jpg" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/linux-avatar.png" />
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide :name="4" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/linux-avatar.png" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/mountains.jpg" />
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
+
+  <!-- ドキュメント: https://antoniandre.github.io/vueper-slides/ -->
+  <vueper-slides
+    autoplay
+    :gap="1"
+    :visible-slides="3"
+    :dragging-distance="70"
+    :arrows-outside="false"
+    duration="3000"
+    fixed-height="300px"
+    class="no-shadow"
+  >
+    <vueper-slide image="https://cdn.quasar.dev/img/mountains.jpg"/>
+    <vueper-slide image="https://cdn.quasar.dev/img/parallax1.jpg"/>
+    <vueper-slide image="https://cdn.quasar.dev/img/quasar.jpg"/>
+    <vueper-slide image="https://cdn.quasar.dev/img/linux-avatar.png"/>
+  </vueper-slides>
 </template>
 
 <style lang="scss" scoped>
 .caption-card {
-  background-color: lightcyan;
   align-items: baseline;
 }
 .title-h1 {
