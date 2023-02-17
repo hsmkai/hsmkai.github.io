@@ -6,7 +6,7 @@ defineProps(['title', 'subTitle'])
 <template>
   <div class="q-pa-md">
     <q-card flat class="caption-card">
-      <q-card-actions align="around" class="title-actions">
+      <q-card-actions align="around" class="title-actions justify-around">
         <q-card-section>
           <h1 class="title-h1">{{ title }}</h1>
         </q-card-section>
@@ -20,6 +20,9 @@ defineProps(['title', 'subTitle'])
 </template>
 
 <style lang="scss" scoped>
+.space {
+  justify-content: space-between;
+}
 .caption-card {
   align-items: baseline;
 }

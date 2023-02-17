@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+import WorldView from '@/components/Works/WorldView.vue';
+</script>
+
 <template>
-  <h1 class="topMargin">Works</h1>
+  <WorldView/>
 </template>
 
 <style lang="scss" scoped>
