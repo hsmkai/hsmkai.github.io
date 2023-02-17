@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 var tab = ref('')
+var menuOpen = ref(false)
 
 const menuItem = [
   {
@@ -31,14 +32,32 @@ const menuItem = [
       <div class="header">
         <q-toolbar>
           <q-space />
-          <q-tabs v-model="tab" shrink class="tabs">
+          <!-- PCではそれぞれのボタンを表示 -->
+          <q-tabs v-model="tab" shrink class="gt-sm">
             <template v-for="(item, index) in menuItem" :key="index">
               <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
             </template>
           </q-tabs>
+          <!-- スマホではメニューボタンを表示 -->
+          <q-btn flat dense round icon="menu" @click="menuOpen = !menuOpen" class="lt-md"/>
         </q-toolbar>
         <q-separator color="white" size="2pt"/>
       </div>
+      <q-drawer
+        v-model="menuOpen"
+        :width="200"
+        overlay
+        bordered
+        class="bg-gray-3"
+      >
+        <q-list>
+          <template v-for="(item, index) in menuItem" :key="index">
+            <q-item clickable :to="item.to">
+              <q-item-section>{{ item.label }}</q-item-section>
+            </q-item>
+          </template>
+        </q-list>
+      </q-drawer>
       
       <div class="top-div-main-btn">
         <q-btn flat to="/" class="bg-primary logo">
