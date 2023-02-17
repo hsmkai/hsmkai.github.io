@@ -24,34 +24,36 @@ const menuItem = [
 <template>
   <q-layout>  
     <q-scroll-area style="height: 100vh; ">
-      <q-header class="bg-transparent">
-        <div class="divMainButton">
-          <q-btn flat to="/" class="bg-primary mainButton">
-            <q-img src="@/assets/Home/logoBW.png"/>
-          </q-btn>
-        </div>
-        <q-toolbar class="bg-transparent text-black">
-          <!-- <q-btn flat label="タイトル押すとメイン画面に戻るボタン"/> -->
+      <q-page-container>
+        <router-view></router-view>
+      </q-page-container>
+
+      <div class="header">
+        <q-toolbar>
           <q-space />
-          <q-tabs v-model="tab" shrink>
+          <q-tabs v-model="tab" shrink class="tabs">
             <template v-for="(item, index) in menuItem" :key="index">
               <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
             </template>
           </q-tabs>
         </q-toolbar>
-        <q-separator />
-      </q-header>
-
-      <q-page-container>
-        <router-view></router-view>
-      </q-page-container>
+        <q-separator color="white" size="2pt"/>
+      </div>
+      
+      <div class="top-div-main-btn">
+        <q-btn flat to="/" class="bg-primary logo">
+          <q-img src="@/assets/Home/logoBW.png"/>
+        </q-btn>
+      </div>
       
       <q-footer class="bg-black">
         <q-toolbar>
-          <q-img src="@/assets/Home/logo.png" class="mainButton"/>
+          <div class="bottom-div-main-btn gt-sm">
+            <q-img src="@/assets/Home/logo.png" class="logo"/>
+          </div>
           <div class="footContents">
-            <div>
-              <q-space/>
+            <!-- PC用フッター -->
+            <div class="gt-sm">
               <q-tabs v-model="tab" shrink>
                 <template v-for="(item, index) in menuItem" :key="index">
                   <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
@@ -77,15 +79,23 @@ const menuItem = [
   background-color: $primary;
 }
 
-.mainButton {
-  width: 13%;
-  min-width: 150px;
+.header {
+  width: 100%;
+  top: 0;
+  position: absolute;
 }
 
-.divMainButton {
+.top-div-main-btn {
   top: 2vh;
-  width: 100%;
+  width: 13%;
   position: absolute;
+}
+.bottom-div-main-btn {
+  width: 13%;
+}
+.logo {
+  width: 100%;
+  min-width: 150px;
 }
 
 .footContents {
