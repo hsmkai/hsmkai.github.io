@@ -29,6 +29,8 @@ const menuItem = [
         <router-view></router-view>
       </q-page-container>
 
+      <q-separator vertical color="primary" size="2pt" class="absolute-left v-line"/>
+
       <div class="header">
         <q-toolbar>
           <q-space />
@@ -41,7 +43,7 @@ const menuItem = [
           <!-- スマホではメニューボタンを表示 -->
           <q-btn flat dense round icon="menu" @click="menuOpen = !menuOpen" class="lt-md"/>
         </q-toolbar>
-        <q-separator color="white" size="2pt"/>
+        <q-separator color="primary" size="2pt"/>
       </div>
       <q-drawer
         v-model="menuOpen"
@@ -79,7 +81,7 @@ const menuItem = [
                 </template>
               </q-tabs>
             </div>
-            <div class="rightAlign q-pt-md q-pr-md">
+            <div class="footComment q-pt-md q-pr-md">
               <!-- <p class="footnotesize">このサイトのコンテンツは一部を除き『斜向』が著作権を有しています。</p>
               <p class="footnotesize">これらの無断での転載，不正利用を断じて禁じます。</p> -->
               <p class="footnotesize">Copyright ©斜向 All Rights Reserved.</p>
@@ -115,14 +117,19 @@ const menuItem = [
   min-width: 150px;
 }
 
+.v-line {
+  margin-left: min(50px, 5%);
+}
+
 .footer {
   top: 0;
   right: 0;
   position: absolute;
   width: min-content;
 }
-.rightAlign {
+.footComment {
   text-align: right;
+  margin-top: 70px;
 }
 .footnotesize{
   font-size: 1.2em;
