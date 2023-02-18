@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue';
-defineProps(['imgsrc', 'title', 'text'])
+defineProps(['imgsrc', 'title', 'text', 'to'])
 </script>
 
 <template>
@@ -14,6 +14,10 @@ defineProps(['imgsrc', 'title', 'text'])
     <q-card-section>
       {{ text }}
     </q-card-section>
+
+    <div class="absolute-top btn">
+      <q-btn :to="to" replace color="transparent" class="btn"/>
+    </div>
   </q-card>
 </template>
 
@@ -25,5 +29,10 @@ defineProps(['imgsrc', 'title', 'text'])
   margin-left: 3em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
 }
 </style>
