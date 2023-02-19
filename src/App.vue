@@ -31,7 +31,7 @@ const menuItem = [
 
       <q-separator vertical color="primary" size="2pt" class="absolute-left v-line"/>
 
-      <div class="header">
+      <div class="header blur">
         <q-toolbar>
           <q-space />
           <!-- PCではそれぞれのボタンを表示 -->
@@ -76,7 +76,7 @@ const menuItem = [
           </div>
           <q-space/>
           <div>
-            <div class="footer gt-sm q-pa-md">
+            <div class="footer q-pa-md">
               <q-tabs v-model="tab" shrink>
                 <template v-for="(item, index) in menuItem" :key="index">
                   <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
@@ -98,6 +98,11 @@ const menuItem = [
 <style lang="scss" scoped>
 .bg-primary {
   background-color: $primary;
+}
+
+.blur {
+  // backdrop-filter: blur(5px);
+  background: linear-gradient(90deg, transparent, white);
 }
 
 .header {
