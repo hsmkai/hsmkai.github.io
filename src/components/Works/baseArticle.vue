@@ -10,8 +10,12 @@ defineProps(['imgsrc'])
   </div>
 
   <q-page-container>
-    <q-page-sticky position="bottom-right" :offset="[0, 0]">
-      <q-btn label="test" icon="school"/>
+    <q-page-sticky position="bottom-right" :offset="[25, 25]">
+      <q-btn round icon="file_download" color="secondary" size="30px">
+        <q-tooltip>
+          <span class="tooltip">ダウンロード</span>
+        </q-tooltip>
+      </q-btn>
     </q-page-sticky>
   </q-page-container>
 </template>
@@ -20,5 +24,9 @@ defineProps(['imgsrc'])
 .mainImg {
   top: 50px;
   height: calc(100vh - 50px)
+}
+
+.tooltip {
+  font-size: large;
 }
 </style>
