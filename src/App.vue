@@ -37,7 +37,9 @@ const menuItem = [
           <!-- PCではそれぞれのボタンを表示 -->
           <q-tabs v-model="tab" shrink class="gt-sm">
             <template v-for="(item, index) in menuItem" :key="index">
-              <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
+              <q-route-tab :to="item.to" :name="'tab'+index">
+                <span class="tab">{{ item.label }}</span>
+              </q-route-tab>
             </template>
           </q-tabs>
           <!-- スマホではメニューボタンを表示 -->
@@ -102,6 +104,11 @@ const menuItem = [
   width: 100%;
   top: 0;
   position: absolute;
+}
+.tab {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: none;
 }
 
 .top-div-main-btn {
