@@ -1,9 +1,9 @@
-<template>
-  <h1 class="topMargin">Contacts</h1>
-</template>
+<script lang="ts" setup>
+import ContactsView from '@/components/Contacts/ContactsView.vue';
+</script>
 
-<style lang="scss" scoped>
-.topMargin {
-  margin-top: 15vh;
-}
-</style>
+<template>
+  <div class="article">
+    <ContactsView/>
+  </div>
+</template>

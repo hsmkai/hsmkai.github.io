@@ -3,11 +3,7 @@ import WorldView from '@/components/Works/WorldView.vue';
 </script>
 
 <template>
-  <WorldView/>
+  <div class="article">
+    <WorldView/>
+  </div>
 </template>
-
-<style lang="scss" scoped>
-.topMargin {
-  margin-top: 15vh;
-}
-</style>

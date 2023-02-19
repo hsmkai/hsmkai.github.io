@@ -1,9 +1,11 @@
-<template>
-  <h1 class="topMargin">About</h1>
-</template>
+<script lang="ts" setup>
+import Hsmkai from '@/components/About/HsmkaiView.vue';
+import MembersView from '@/components/About/MembersView.vue';
+</script>
 
-<style lang="scss" scoped>
-.topMargin {
-  margin-top: 15vh;
-}
-</style>
+<template>
+  <div class="article">
+    <Hsmkai/>
+    <MembersView/>
+  </div>
+</template>
