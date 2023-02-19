@@ -4,7 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import WorksView from '../views/WorksView.vue'
 import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
-import ContactsView from '../views/ContactsView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -33,9 +33,9 @@ const routes: Array<RouteRecordRaw> = [
     component: CodeSurvivalView
   },
   {
-    path: '/contacts',
-    name: 'contacts',
-    component: ContactsView
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
   },
 ]
 

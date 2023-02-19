@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import ContactsView from '@/components/Contacts/ContactsView.vue';
+import ContactView from '@/components/Contact/ContactView.vue';
 </script>
 
 <template>
   <div class="article">
-    <ContactsView/>
+    <ContactView/>
   </div>
 </template>

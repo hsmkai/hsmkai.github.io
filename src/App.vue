@@ -14,8 +14,8 @@ const menuItem = [
     label: "Works"
   },
   {
-    to: "/contacts",
-    label: "Contacts"
+    to: "/contact",
+    label: "Contact"
   }
 ]
 
