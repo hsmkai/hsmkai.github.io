@@ -11,9 +11,9 @@ defineProps(['imgsrc', 'title', 'text', 'to'])
       </div>
     </q-img>
 
-    <q-card-section>
+    <!-- <q-card-section>
       {{ text }}
-    </q-card-section>
+    </q-card-section> -->
 
     <div class="absolute-top btn">
       <q-btn :to="to" replace color="transparent" class="btn"/>
