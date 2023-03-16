@@ -32,8 +32,8 @@ const cards = [
 
 <template>
   <TitleCard title="World" sub-title="個性豊かな新世界。"/>
-
-  <div class="q-pa-md row q-gutter-md justify-center">
+  
+  <div class="row q-gutter-md justify-center">
     <template v-for="(card, index) in cards" :key="index">
       <baseCard :to="card.to" :imgsrc="card.imgsrc" :title="card.title" :text="card.text"/>
     </template>

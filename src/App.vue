@@ -28,7 +28,7 @@ const menuItem = [
       <router-view></router-view>
     </q-page-container>
 
-    <q-separator vertical color="primary" size="2pt" class="absolute-left v-line"/>
+    <q-separator vertical color="primary" size="1.5pt" class="absolute-left v-line"/>
 
     <div class="header blur">
       <q-toolbar>
@@ -44,7 +44,7 @@ const menuItem = [
         <!-- スマホではメニューボタンを表示 -->
         <q-btn flat dense round icon="menu" @click="menuOpen = !menuOpen" class="lt-md"/>
       </q-toolbar>
-      <q-separator color="primary" size="2pt"/>
+      <q-separator color="primary" size="1.5pt"/>
     </div>
     <q-drawer
       v-model="menuOpen"

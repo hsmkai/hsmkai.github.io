@@ -5,7 +5,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
 
 <template>
   <BaseArticle :imgsrc="require('@/assets/Works/Worlds/CodeSurvival.jpg')">
-    <TitleCard title="Code:Survival" sub-title="荒廃した世界で一人称RTS!"/>
+    <TitleCard title="荒廃した世界で一人称RTS!" sub-title=""/>
 
     <p>舞台は、文明が一度滅んだ世界。</p>
     <p>ロボットである自分たちは、生きるために必要な鉱石を採掘して暮らしている。</p>

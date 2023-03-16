@@ -5,7 +5,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
 
 <template>
   <BaseArticle :imgsrc="require('@/assets/Works/Worlds/prologram.png')">
-    <TitleCard title="prologram" sub-title="プログラムを構築してパズルを解け！"/>
+    <TitleCard title="プログラムを構築してパズルを解け！" sub-title=""/>
 
     <p>ここはドローンが飛び回る未来世界。</p>
     <p>君はドローン操縦士になるため、この試験飛行場へやってきた。</p>
