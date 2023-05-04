@@ -8,7 +8,7 @@ import Member from '@/components/Home/MemberView.vue';
 
 <template>
   <TopImage/>
-  <div class="article">
+  <div id="about" class="article">
     <About/>
     <Member class="q-pt-xl"/>
   </div>

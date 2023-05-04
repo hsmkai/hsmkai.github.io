@@ -6,7 +6,7 @@ var menuOpen = ref(false)
 
 const menuItem = [
   {
-    to: "/",
+    to: "/#about",
     label: "About"
   },
   {
