@@ -25,7 +25,7 @@ defineProps<Prop>()
     </q-card-section>
 
     <div class="absolute-top btn">
-      <q-btn :to="to" replace color="transparent" class="btn"/>
+      <q-btn :to="to" color="transparent" class="btn"/>
     </div>
   </q-card>
 </template>

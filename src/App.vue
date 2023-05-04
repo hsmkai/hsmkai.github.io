@@ -75,7 +75,7 @@ const menuItem = [
       class="bg-gray-3"
     >
       <q-list>
-        <template v-for="(item, index) in menuItem" :key="index">
+        <template v-for="item in menuItem" :key="item">
           <q-item clickable :to="item.to">
             <q-item-section>{{ item.label }}</q-item-section>
           </q-item>
@@ -85,40 +85,33 @@ const menuItem = [
     
     <!-- フッター -->
     <q-footer class="bg-black">
-      <q-toolbar>
-        <div class="bottom-div-main-btn gt-sm">
-          <q-img src="@/assets/logo/footer.svg" class="logo"/>
+      <div class="row justify-between">
+        <div class="gt-sm">
+          <q-avatar square class="q-pa-xl footer-logo">
+            <q-img src="@/assets/logo/footer.svg"/>
+          </q-avatar>
         </div>
-        <q-space/>
-        <div>
-          <div class="footer q-pa-md">
-            <q-tabs v-model="tab" shrink>
-              <template v-for="(item, index) in menuItem" :key="index">
-                <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
-              </template>
-            </q-tabs>
-          </div>
-          <div class="footComment q-pt-md q-pr-md">
-            <!-- <p class="footnotesize">このサイトのコンテンツは一部を除き『斜向』が著作権を有しています。</p>
-            <p class="footnotesize">これらの無断での転載，不正利用を断じて禁じます。</p> -->
-            <p class="footnotesize">Copyright ©斜向 All Rights Reserved.</p>
+        <q-img src="@/assets/logo/footer.svg" class="lt-sm footer-logo"/>
+        
+        <div style="margin-top: auto;">
+          <q-tabs v-model="tab" shrink align="right" style="width: 70vw;">
+            <template v-for="(item, index) in menuItem" :key="index">
+              <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
+            </template>
+          </q-tabs>
+
+          <div class="q-pr-md q-pt-lg">
+            <p class="gt-sm q-pa-none footnotesize">このサイトのコンテンツは一部を除き『斜向』が著作権を有しています</p>
+            <p class="gt-sm q-pa-none footnotesize">これらの無断での転載、不正利用を断じて禁じます</p>
+            <p class="q-pa-none footnotesize">© 斜向 All Rights Reserved.</p>
           </div>
         </div>
-      </q-toolbar>
+      </div>
     </q-footer>
   </q-layout>
 </template>
 
 <style lang="scss" scoped>
-.bg-primary {
-  background-color: $primary;
-}
-
-.blur {
-  // backdrop-filter: blur(5px);
-  background: linear-gradient(90deg, transparent, white);
-}
-
 .header {
   width: 100%;
   top: 0;
@@ -131,34 +124,18 @@ const menuItem = [
   text-transform: none;
 }
 
-.top-div-main-btn {
-  top: 2vh;
-  width: 13%;
-  position: absolute;
-}
-.bottom-div-main-btn {
-  width: 13%;
-}
-.logo {
-  width: 100%;
-  min-width: 150px;
+.footer-logo {
+  width: 8vw;
+  min-width: 100px;
+  height: fit-content;
 }
 
 .v-line {
   margin-left: min(50px, 5%);
 }
 
-.footer {
-  top: 0;
-  right: 0;
-  position: absolute;
-  width: min-content;
-}
-.footComment {
-  text-align: right;
-  margin-top: 70px;
-}
 .footnotesize{
-  font-size: 1.2em;
+  font-size: 1rem;
+  text-align: right;
 }
 </style>
