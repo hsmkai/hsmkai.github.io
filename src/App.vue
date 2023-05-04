@@ -23,15 +23,30 @@ const menuItem = [
 
 
 <template>
-  <q-layout>  
+  <q-layout>
+    <!-- ページ内容 -->
     <q-page-container>
       <router-view></router-view>
     </q-page-container>
 
-    <q-separator vertical color="primary" size="1.5pt" class="absolute-left v-line"/>
+    <!-- 縦線 -->
+    <q-separator
+      vertical
+      :color="$route.path === '/' ? 'white' : 'black'"
+      size="1.5pt"
+      class="absolute-left v-line"
+    />
+    <q-separator
+      vertical
+      color="black"
+      size="1.5pt"
+      class="absolute-left v-line"
+      style="top: 100vh;"
+    />
 
-    <div class="header blur">
-      <q-toolbar>
+    <!-- ヘッダー -->
+    <div class="header" :style="{'color': $route.path === '/' ? 'white' : 'black'}">
+      <q-toolbar style="padding-right: 3vw;">
         <q-space />
         <!-- PCではそれぞれのボタンを表示 -->
         <q-tabs v-model="tab" shrink class="gt-sm">
@@ -44,8 +59,10 @@ const menuItem = [
         <!-- スマホではメニューボタンを表示 -->
         <q-btn flat dense round icon="menu" @click="menuOpen = !menuOpen" class="lt-md"/>
       </q-toolbar>
-      <q-separator color="primary" size="1.5pt"/>
+      <q-separator :color="$route.path === '/' ? 'white' : 'black'" size="1.5pt"/>
     </div>
+
+    <!-- スマホ画面時のメニューによって開くDrawer -->
     <q-drawer
       v-model="menuOpen"
       :width="200"
@@ -62,12 +79,14 @@ const menuItem = [
       </q-list>
     </q-drawer>
     
+    <!-- 左上のホームボタン -->
     <div class="top-div-main-btn">
       <q-btn flat to="/" class="bg-primary logo">
         <q-img src="@/assets/Home/logoBW.png"/>
       </q-btn>
     </div>
     
+    <!-- フッター -->
     <q-footer class="bg-black">
       <q-toolbar>
         <div class="bottom-div-main-btn gt-sm">
