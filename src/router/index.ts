@@ -1,21 +1,16 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
 import WorksView from '../views/WorksView.vue'
 import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
 import ContactView from '../views/ContactView.vue'
+import LicenseView from '../views/LicenseView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: AboutView
   },
   {
     path: '/works',
@@ -36,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/license',
+    name: 'license',
+    component: LicenseView
   },
 ]
 
