@@ -1,23 +1,49 @@
 <script setup lang="ts">
-import TitleCard from '../utils/TitleCard.vue';
 import Member from './MemberList.vue';
 </script>
 
 <template>
-  <title-card title="Members" sub-title="信頼する仲間達。">
-    <q-list>
-      <Member
-        img-path="https://cdn.quasar.dev/img/linux-avatar.png"
-        name="CivilTT"
-      />
-      <Member
-        img-path="https://cdn.quasar.dev/img/linux-avatar.png"
-        name="CivilTT"
-      />
-      <Member
-        img-path="https://cdn.quasar.dev/img/linux-avatar.png"
-        name="CivilTT"
-      />
-    </q-list>
-  </title-card>
+  <q-list>
+    <Member
+      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      name="柏餅々々々"
+      twitter-name="kswmcHi"
+      :text="[
+        '「楽しい」を創りたいデザイナーもどき。',
+        'ホームページのレイアウトを考えたり、配布ワールドの概要から詳細までいろいろと。',
+        '○○担当って言い切れない程度には謎の和菓子ですが頑張ってます。',
+        'ちなみに読み方は「かしわもち」だけで大丈夫。'
+      ]"
+    />
+    <Member
+      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      name="CivilTT"
+      twitter-name="CivilT_T"
+      :text="[
+
+      ]"
+    />
+    <Member
+      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      name="柏餅々々々"
+      twitter-name="kswmcHi"
+      :text="[
+        '「楽しい」を創りたいデザイナーもどき。',
+        'ホームページのレイアウトを考えたり、配布ワールドの概要から詳細までいろいろと。',
+        '○○担当って言い切れない程度には謎の和菓子ですが頑張ってます。',
+        'ちなみに読み方は「かしわもち」だけで大丈夫。'
+      ]"
+    />
+    <Member
+      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      name="柏餅々々々"
+      twitter-name="kswmcHi"
+      :text="[
+        '「楽しい」を創りたいデザイナーもどき。',
+        'ホームページのレイアウトを考えたり、配布ワールドの概要から詳細までいろいろと。',
+        '○○担当って言い切れない程度には謎の和菓子ですが頑張ってます。',
+        'ちなみに読み方は「かしわもち」だけで大丈夫。'
+      ]"
+    />
+  </q-list>
 </template>

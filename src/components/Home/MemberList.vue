@@ -3,6 +3,8 @@ import { defineProps } from 'vue';
 interface Props {
   imgPath: string
   name: string
+  twitterName: string
+  text: string[]
 }
 defineProps<Props>()
 
@@ -20,7 +22,15 @@ function loadAvatar(fileName: string) {
       </q-avatar>
     </q-item-section>
     <q-item-section>
-      <p class="title q-ma-none">{{ name }}</p>
+      <div class="text-h5 q-mt-sm">{{ name }}</div>
+      <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none">
+        Twitter_@{{ twitterName }}
+      </a>
+      <div class="q-pt-md">
+        <template v-for="line in text" :key="line">
+          <p class="caption q-ma-none"  style="width: 100%">{{ line }}</p>
+        </template>
+      </div>
     </q-item-section>
   </q-item>
 </template>
@@ -28,5 +38,9 @@ function loadAvatar(fileName: string) {
 <style scoped lang="scss">
 .avater-img {
   height: 100%;
+}
+
+.caption {
+  font-size: 1rem;
 }
 </style>

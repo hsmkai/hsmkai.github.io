@@ -7,18 +7,9 @@ import Member from '@/components/Home/MemberView.vue';
 
 
 <template>
-  <div class="home">
-    <TopImage/>
-    <div class="outline">
-      <About/>
-      <Member/>
-    </div>
+  <TopImage/>
+  <div class="article">
+    <About/>
+    <Member class="q-pt-xl"/>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.outline {
-  margin-left: min(50px, 5vw);
-  margin-top: 5rem;
-}
-</style>

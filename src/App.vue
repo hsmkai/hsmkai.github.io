@@ -61,7 +61,7 @@ const menuItem = [
           </template>
         </q-tabs>
         <!-- スマホではメニューボタンを表示 -->
-        <q-btn flat dense round icon="menu" size="20px" @click="menuOpen = !menuOpen" class="lt-md"/>
+        <q-btn flat dense round icon="menu" size="20px" @click="menuOpen = !menuOpen" class="lt-md text-white"/>
       </q-toolbar>
       <q-separator color="black" size="1.5pt"/>
     </div>
