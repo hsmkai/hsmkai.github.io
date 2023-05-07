@@ -64,12 +64,12 @@ const menuItem = [
           </template>
           <div class="row">
             <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-              <q-avatar size="30px">
-                <q-img src="@/assets/icons/twitter.svg"/>
+              <q-avatar square size="30px">
+                <q-img src="@/assets/icons/twitter_white.svg"/>
               </q-avatar>
             </q-btn>
             <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-              <q-avatar size="30px">
+              <q-avatar square size="30px">
                 <q-img src="@/assets/icons/youtube.svg"/>
               </q-avatar>
             </q-btn>
@@ -115,12 +115,12 @@ const menuItem = [
             </template>
             <div class="q-pr-md row">
               <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-                <q-avatar size="30px">
-                  <q-img src="@/assets/icons/twitter.svg"/>
+                <q-avatar square size="30px">
+                  <q-img src="@/assets/icons/twitter_white.svg"/>
                 </q-avatar>
               </q-btn>
               <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-                <q-avatar size="30px">
+                <q-avatar square size="30px">
                   <q-img src="@/assets/icons/youtube.svg"/>
                 </q-avatar>
               </q-btn>
