@@ -63,12 +63,12 @@ const menuItem = [
             </q-route-tab>
           </template>
           <div class="row">
-            <q-btn square outline to="https://twitter.com/hsmkai" class="q-mx-xs" style="color: white; width: 40px;">
+            <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
               <q-avatar size="30px">
                 <q-img src="@/assets/icons/twitter.svg"/>
               </q-avatar>
             </q-btn>
-            <q-btn square outline to="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" class="q-mx-xs" style="color: white; width: 40px;">
+            <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
               <q-avatar size="30px">
                 <q-img src="@/assets/icons/youtube.svg"/>
               </q-avatar>
@@ -114,12 +114,12 @@ const menuItem = [
               <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
             </template>
             <div class="q-pr-md row">
-              <q-btn square outline to="https://twitter.com/hsmkai" class="q-mx-xs" style="color: white; width: 40px;">
+              <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
                 <q-avatar size="30px">
                   <q-img src="@/assets/icons/twitter.svg"/>
                 </q-avatar>
               </q-btn>
-              <q-btn square outline to="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" class="q-mx-xs" style="color: white; width: 40px;">
+              <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
                 <q-avatar size="30px">
                   <q-img src="@/assets/icons/youtube.svg"/>
                 </q-avatar>
