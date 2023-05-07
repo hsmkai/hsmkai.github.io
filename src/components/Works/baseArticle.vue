@@ -4,7 +4,7 @@ defineProps(['imgsrc'])
 </script>
 
 <template>
-  <q-img :src="imgsrc" alt="" class="mainImg"/>
+  <q-img :src="imgsrc"/>
   <div class="article">
     <slot></slot>
   </div>
@@ -21,11 +21,6 @@ defineProps(['imgsrc'])
 </template>
 
 <style lang="scss" scoped>
-.mainImg {
-  top: 50px;
-  height: calc(100vh - 50px)
-}
-
 .tooltip {
   font-size: large;
 }
