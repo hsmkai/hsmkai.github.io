@@ -59,6 +59,18 @@ const menuItem = [
               <span class="tab">{{ item.label }}</span>
             </q-route-tab>
           </template>
+          <div class="row">
+            <q-btn square outline to="https://twitter.com/hsmkai" class="q-mx-xs" style="color: white; width: 40px;">
+              <q-avatar size="30px">
+                <q-img src="@/assets/icons/twitter.svg"/>
+              </q-avatar>
+            </q-btn>
+            <q-btn square outline to="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" class="q-mx-xs" style="color: white; width: 40px;">
+              <q-avatar size="30px">
+                <q-img src="@/assets/icons/youtube.svg"/>
+              </q-avatar>
+            </q-btn>
+          </div>
         </q-tabs>
         <!-- スマホではメニューボタンを表示 -->
         <q-btn flat dense round icon="menu" size="20px" @click="menuOpen = !menuOpen" class="lt-md text-white"/>
@@ -98,6 +110,18 @@ const menuItem = [
             <template v-for="(item, index) in menuItem" :key="index">
               <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
             </template>
+            <div class="q-pr-md row">
+              <q-btn square outline to="https://twitter.com/hsmkai" class="q-mx-xs" style="color: white; width: 40px;">
+                <q-avatar size="30px">
+                  <q-img src="@/assets/icons/twitter.svg"/>
+                </q-avatar>
+              </q-btn>
+              <q-btn square outline to="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" class="q-mx-xs" style="color: white; width: 40px;">
+                <q-avatar size="30px">
+                  <q-img src="@/assets/icons/youtube.svg"/>
+                </q-avatar>
+              </q-btn>
+            </div>
           </q-tabs>
 
           <div class="q-pr-md q-pt-lg">
