@@ -37,6 +37,9 @@ const menuItem = [
       class="absolute-left v-line"
       style="top: 50px"
     />
+    <p v-show="$route.path === '/'" class="v-line v-line-text q-ma-none absolute-left">
+      Scroll down →
+    </p>
     <q-separator
       vertical
       color="black"
@@ -156,6 +159,20 @@ const menuItem = [
 
 .v-line {
   margin-left: min(50px, 5%);
+}
+.v-line-text {
+  // 縦書き
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  
+  // 文字
+  color: white;
+  font-size: 2rem;
+  width: 1.1em;
+
+  // 画面の下に文字を固定する
+  text-align: right;
+  height: 100vh;
 }
 
 .footnotesize{
