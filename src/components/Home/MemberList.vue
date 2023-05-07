@@ -6,11 +6,10 @@ interface Props {
   twitterName: string
   text: string[]
 }
-defineProps<Props>()
+const prop = defineProps<Props>()
 
-function loadAvatar(fileName: string) {
-  // return require(`@/assets/Member/${name}`)
-  return fileName
+function loadAvatar() {
+  return require(`@/assets/Home/${prop.imgPath}`)
 }
 </script>
 
@@ -18,7 +17,7 @@ function loadAvatar(fileName: string) {
   <q-item>
     <q-item-section side>
       <q-avatar size="130px">
-        <q-img :src="loadAvatar(imgPath)" class="avater-img"/>
+        <q-img :src="loadAvatar()" class="avater-img"/>
       </q-avatar>
     </q-item-section>
     <q-item-section>

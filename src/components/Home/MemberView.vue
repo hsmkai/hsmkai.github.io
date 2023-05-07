@@ -5,7 +5,7 @@ import Member from './MemberList.vue';
 <template>
   <q-list>
     <Member
-      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      img-path="sample.png"
       name="柏餅々々々"
       twitter-name="kswmcHi"
       :text="[
@@ -16,7 +16,7 @@ import Member from './MemberList.vue';
       ]"
     />
     <Member
-      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      img-path="CivilTT.png"
       name="CivilTT"
       twitter-name="CivilT_T"
       :text="[
@@ -27,7 +27,7 @@ import Member from './MemberList.vue';
       ]"
     />
     <Member
-      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      img-path="sample.png"
       name="古銅"
       twitter-name="txkodo"
       :text="[
@@ -38,7 +38,7 @@ import Member from './MemberList.vue';
       ]"
     />
     <Member
-      img-path="https://cdn.quasar.dev/img/linux-avatar.png"
+      img-path="sample.png"
       name="二式"
       twitter-name="24ki05"
       :text="[
