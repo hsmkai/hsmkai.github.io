@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WorksView from '../views/WorksView.vue'
+import WorkTop from '../views/Works/TopPage.vue'
+import MuseumView from '../views/Works/World/MuseumView.vue'
 import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
+import CutieTrickView from '../views/Works/World/CutieTrickView.vue'
 import ContactView from '../views/ContactView.vue'
 import LicenseView from '../views/LicenseView.vue'
 
@@ -15,17 +18,29 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/works',
     name: 'works',
-    component: WorksView
-  },
-  {
-    path: '/works/prologram',
-    name: 'prologram',
-    component: PrologramView
-  },
-  {
-    path: '/works/code.survival',
-    name: 'code.survival',
-    component: CodeSurvivalView
+    component: WorksView,
+    children: [
+      {
+        path: '',
+        component: WorkTop
+      },
+      {
+        path: 'museum',
+        component: MuseumView,
+      },
+      {
+        path: 'prologram',
+        component: PrologramView,
+      },
+      {
+        path: 'code.survival',
+        component: CodeSurvivalView,
+      },
+      {
+        path: 'cutie_trick',
+        component: CutieTrickView,
+      },
+    ]
   },
   {
     path: '/contact',

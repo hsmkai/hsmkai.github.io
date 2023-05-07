@@ -5,7 +5,7 @@ interface Prop {
   imgsrc: string
   title: string
   text: string[]
-  to: string
+  toName: string
 }
 defineProps<Prop>()
 </script>
@@ -25,7 +25,7 @@ defineProps<Prop>()
     </q-card-section>
 
     <div class="absolute-top btn">
-      <q-btn :to="to" color="transparent" class="btn"/>
+      <q-btn :to="`works/${toName}`" color="transparent" class="btn"/>
     </div>
   </q-card>
 </template>

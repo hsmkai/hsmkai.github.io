@@ -3,14 +3,11 @@ import TitleCard from '../utils/TitleCard.vue';
 </script>
 
 <template>
-  <TitleCard title="踏み出せ、新世界へ。"/>
-
-  <p>斜向は様々なアプローチでちょっと新しいコンテンツをMinecraftで制作しているグループです。</p>
-  <p>コマンド、リソースパック、音楽などによって新世界(ハスムカイ)へと連れていきます。</p>
+  <TitleCard
+    title="踏み出せ、新世界へ。"
+    :desc="[
+      '斜向は様々なアプローチで、ちょっと新しいコンテンツをMinecraftで制作しているグループです。',
+      'コマンド、リソースパック、音楽などを用いて新世界(ハスムカイ)へとお連れします。'
+    ]"
+  />
 </template>
-
-<style scoped lang="scss">
-p {
-  padding: 0;
-}
-</style>

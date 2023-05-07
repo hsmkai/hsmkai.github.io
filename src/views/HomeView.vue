@@ -10,6 +10,6 @@ import Member from '@/components/Home/MemberView.vue';
   <TopImage/>
   <div id="about" class="article">
     <About/>
-    <Member class="q-pt-xl"/>
+    <Member/>
   </div>
 </template>
