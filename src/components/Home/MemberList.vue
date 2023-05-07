@@ -23,7 +23,7 @@ function loadAvatar(fileName: string) {
     </q-item-section>
     <q-item-section>
       <div class="text-h5 q-mt-sm">{{ name }}</div>
-      <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none">
+      <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none" style="width: max-content;">
         Twitter_@{{ twitterName }}
       </a>
       <div class="q-pt-md">
