@@ -5,7 +5,7 @@ import WorkTop from '../views/Works/TopPage.vue'
 import MuseumView from '../views/Works/World/MuseumView.vue'
 import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
-import CutieTrickView from '../views/Works/World/CutieTrickView.vue'
+import CutieTrickView from '../views/Works/Others/CutieTrickView.vue'
 import ContactView from '../views/ContactView.vue'
 import LicenseView from '../views/LicenseView.vue'
 
