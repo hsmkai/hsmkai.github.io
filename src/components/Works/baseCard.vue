@@ -17,9 +17,9 @@ defineProps<Prop>()
 
       <q-card-section>
         <div class="text-overline">配布ワールド</div>
-        <div class="text-h5 q-mt-sm q-mb-xs">{{ title }}</div>
+        <div class="text-h5 q-my-md title">{{ title }}</div>
         <template v-for="line in text" :key="line">
-          <p class="text-caption q-ma-none"  style="width: 100%">{{ line }}</p>
+          <p class="q-ma-none caption"  style="width: 100%">{{ line }}</p>
         </template>
       </q-card-section>
     </q-card-section>
@@ -36,6 +36,17 @@ defineProps<Prop>()
   margin-left: 3em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.3rem;
+
+}
+
+.caption {
+  font-size: 1rem;
+  margin-bottom: 3px;
 }
 
 .btn {
