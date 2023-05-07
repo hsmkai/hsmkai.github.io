@@ -25,7 +25,7 @@ function copyMailAddress() {
       @click="openURL('https://twitter.com/messages/1121761492284493824-1428274147663122432')"
     >
       <template v-slot:avater>
-        <q-avatar size="2rem">
+        <q-avatar square size="2rem">
           <q-img src="@/assets/icons/twitter_blue.svg"/>
         </q-avatar>
       </template>
