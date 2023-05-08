@@ -7,6 +7,13 @@
     <meta name="description" content="斜向は様々なアプローチでちょっと新しいコンテンツをMinecraftで制作しているグループ。コマンド、リソースパック、音楽などによって新世界(ハスムカイ)へと連れていきます。">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      (function (l) {
+        if (l.hash) {
+          window.history.replaceState(null, null, l.hash.slice(1));
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
     <noscript>
