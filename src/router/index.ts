@@ -5,6 +5,8 @@ import WorkTop from '../views/Works/TopPage.vue'
 import MuseumView from '../views/Works/World/MuseumView.vue'
 import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
+import UseView from '../views/Works/Agreements/UseView.vue'
+import GuideLineView from '../views/Works/Agreements/GuidelineView.vue'
 import CutieTrickView from '../views/Works/Others/CutieTrickView.vue'
 import ContactView from '../views/ContactView.vue'
 import LicenseView from '../views/LicenseView.vue'
@@ -39,6 +41,14 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'cutie_trick',
         component: CutieTrickView,
+      },
+      {
+        path: 'terms-of-use',
+        component: UseView
+      },
+      {
+        path: 'guide',
+        component: GuideLineView
       },
     ]
   },

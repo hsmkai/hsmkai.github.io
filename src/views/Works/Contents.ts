@@ -27,9 +27,9 @@ export const titles: iTitle = {
     desc: ['Minecraftの世界を彩る様々なコンテンツや斜向の創作物をご紹介。']
   },
   'agreement': {
-    title: 'terms of use',
-    subTitle: '利用規約',
-    desc: ['斜向の創作物に関する利用規約をご紹介。']
+    title: 'Agreements',
+    subTitle: '各種規約',
+    desc: ['斜向の創作物に関する各種規約をご紹介。']
   },
 }
 
@@ -88,15 +88,16 @@ export const contents: iContent = {
   ],
   'agreement': [
     {
-      title: '各種規約',
+      title: '利用規約',
       imgsrc: 'default.png',
-      to: 'agreement',
-      text: [
-        '各種規約をご覧になりたい場合はこちらから',
-        '・配布物利用規約',
-        '・ホームページ利用規約',
-        '・プライバシーポリシー'
-      ]
-    }
+      to: 'terms-of-use',
+      text: []
+    },
+    {
+      title: 'ガイドライン',
+      imgsrc: 'default.png',
+      to: 'guide',
+      text: []
+    },
   ]
 }
