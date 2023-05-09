@@ -56,20 +56,23 @@ const menuItem = [
         </q-btn>
         <q-space />
         <!-- PCではそれぞれのボタンを表示 -->
-        <q-tabs v-model="tab" shrink class="gt-sm text-white" style="height: 2.5rem;">
+        <q-tabs v-model="tab" shrink class="gt-sm text-white">
           <template v-for="(item, index) in menuItem" :key="index">
             <q-route-tab :to="item.to" :name="'tab'+index">
               <span class="tab">{{ item.label }}</span>
             </q-route-tab>
           </template>
           <div class="row">
+            <!-- ロゴは利用規約上アイコン幅を100としたときに外枠の幅150を確保する -->
+            <!-- Twitter: https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf -->
+            <!-- YouTube: https://www.youtube.com/intl/ALL_jp/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors -->
             <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-              <q-avatar square size="30px">
+              <q-avatar square size="26px">
                 <q-img src="@/assets/icons/twitter_white.svg"/>
               </q-avatar>
             </q-btn>
             <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
-              <q-avatar square size="30px">
+              <q-avatar square size="26px">
                 <q-img src="@/assets/icons/youtube.svg"/>
               </q-avatar>
             </q-btn>
@@ -111,9 +114,11 @@ const menuItem = [
         <div style="margin-top: auto;">
           <q-tabs v-model="tab" shrink align="right" style="width: 70vw;">
             <template v-for="(item, index) in menuItem" :key="index">
-              <q-route-tab :to="item.to" :name="'tab'+index" :label="item.label"/>
+              <q-route-tab :to="item.to" :name="'tab'+index">
+                <span class="tab">{{ item.label }}</span>
+              </q-route-tab>
             </template>
-            <div class="q-pr-md row">
+            <div class="q-pr-md row desktop-only">
               <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs" style="color: white; width: 40px;">
                 <q-avatar square size="30px">
                   <q-img src="@/assets/icons/twitter_white.svg"/>
@@ -146,6 +151,7 @@ const menuItem = [
   background-color: rgba($color: black, $alpha: 1);
 }
 .tab {
+  margin-top: 20px;
   font-weight: bold;
   font-size: 20px;
   text-transform: none;
@@ -176,7 +182,7 @@ const menuItem = [
 }
 
 .footnotesize{
-  font-size: 1rem;
+  font-size: 1em;
   text-align: right;
 }
 </style>
