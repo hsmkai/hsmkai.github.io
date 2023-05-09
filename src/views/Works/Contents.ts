@@ -23,13 +23,13 @@ export const titles: iTitle = {
   },
   'other': {
     title: 'others',
-    subTitle: '世界を彩るコンテンツ',
+    subTitle: '世界を彩るコンテンツ。',
     desc: ['Minecraftの世界を彩る様々なコンテンツや斜向の創作物をご紹介。']
   },
   'agreement': {
     title: 'Agreements',
     subTitle: '各種規約',
-    desc: ['斜向の創作物に関する各種規約をご紹介。']
+    desc: []
   },
 }
 
