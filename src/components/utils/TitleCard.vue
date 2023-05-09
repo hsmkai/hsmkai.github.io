@@ -15,7 +15,7 @@ defineProps<Prop>()
       {{ title }} <br v-if="$q.platform.is.mobile"/>{{ subTitle }}
     </h1>
   </div>
-  <div v-if="desc !== void 0" class="q-py-xl">
+  <div v-if="desc !== void 0" class="q-pt-md q-pb-xl">
     <template v-for="text in desc" :key="text">
       <p>{{ text }}</p>
     </template>
@@ -26,7 +26,7 @@ defineProps<Prop>()
 h1 {
   font-size: 3.5rem;
   margin-top: 0;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
 p {
