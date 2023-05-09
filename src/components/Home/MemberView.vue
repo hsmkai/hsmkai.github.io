@@ -21,7 +21,7 @@ import Member from './MemberList.vue';
       twitter-name="CivilT_T"
       :text="[
         'マイクラの「外」の住人',
-        '「外」から「内」に入っていくためのツールを主に開発中',
+        '「外」から「内」に入っていくためのツール (ServerStarter) を主に開発中',
         '製作物の簡単な実装や、ホームページ開発を担当',
         '得意技はロールバックとTODO放置'
       ]"
