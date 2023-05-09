@@ -41,11 +41,3 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
     />
   </BaseArticle>
 </template>
-
-<style scoped lang="scss">
-.video {
-  margin: 0 auto;
-  width: min(900px, 80vw);
-  aspect-ratio: 16/9;
-}
-</style>

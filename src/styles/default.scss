@@ -12,6 +12,13 @@ h1 {
   font-size: 4rem;
 }
 
+// ビデオの標準スタイル
+.video {
+  margin: 0 auto;
+  width: min(900px, 80vw);
+  aspect-ratio: 16/9;
+}
+
 // スクロールバー
 html {
   overflow: overlay;
