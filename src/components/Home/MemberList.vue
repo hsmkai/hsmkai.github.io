@@ -14,32 +14,52 @@ function loadAvatar() {
 </script>
 
 <template>
-  <q-item>
+  <q-item class="desktop-only">
     <q-item-section side>
-      <q-avatar size="130px">
+      <q-avatar square size="130px">
         <q-img :src="loadAvatar()" class="avater-img"/>
       </q-avatar>
     </q-item-section>
     <q-item-section>
       <div class="text-h5 q-mt-sm">{{ name }}</div>
       <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none" style="width: max-content;">
-        Twitter_@{{ twitterName }}
+        <q-img src="@/assets/icons/twitter_blue.svg" width="1.3rem"/>@{{ twitterName }}
       </a>
       <div class="q-pt-md">
         <template v-for="line in text" :key="line">
-          <p class="caption q-ma-none"  style="width: 100%">{{ line }}</p>
+          <p style="width: 100%">{{ line }}</p>
         </template>
       </div>
     </q-item-section>
   </q-item>
+
+  <q-expansion-item class="mobile-only">
+    <template v-slot:header>
+      <q-item-section side>
+        <q-avatar square size="130px">
+          <q-img :src="loadAvatar()" class="avater-img"/>
+        </q-avatar>
+      </q-item-section>
+      <q-item-section>
+        <div class="text-h4 q-mt-sm">{{ name }}</div>
+        <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h5 q-pa-none" style="width: max-content;">
+          <q-img src="@/assets/icons/twitter_blue.svg" width="1.6rem"/>@{{ twitterName }}
+        </a>
+      </q-item-section>
+    </template>
+
+    <q-item-section>
+      <div class="q-pa-md">
+        <template v-for="line in text" :key="line">
+          <p style="width: 100%">{{ line }}</p>
+        </template>
+      </div>
+    </q-item-section>
+  </q-expansion-item>
 </template>
 
 <style scoped lang="scss">
 .avater-img {
   height: 100%;
-}
-
-.caption {
-  font-size: 1rem;
 }
 </style>
