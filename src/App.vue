@@ -143,7 +143,7 @@ const menuItem = [
   width: 100%;
   top: 0;
   position: absolute;
-  background-color: rgba($color: black, $alpha: 0.5);
+  background-color: rgba($color: black, $alpha: 1);
 }
 .tab {
   font-weight: bold;
