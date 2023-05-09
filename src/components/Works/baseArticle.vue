@@ -1,27 +1,23 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue';
-defineProps(['imgsrc'])
+import DownloadBtn from './downloadBtn.vue';
+
+interface Prop {
+  productName: string
+  imgsrc: string
+  downloadLink?: string
+}
+defineProps<Prop>()
 </script>
 
 <template>
   <q-img :src="imgsrc"/>
+  
   <div class="article">
     <slot></slot>
   </div>
 
   <q-page-container>
-    <q-page-sticky position="bottom-right" :offset="[25, 25]">
-      <q-btn round icon="file_download" color="secondary" size="30px">
-        <q-tooltip>
-          <span class="tooltip">ダウンロード</span>
-        </q-tooltip>
-      </q-btn>
-    </q-page-sticky>
+    <download-btn :product-name="productName" :download-link="downloadLink"/>
   </q-page-container>
 </template>
-
-<style lang="scss" scoped>
-.tooltip {
-  font-size: large;
-}
-</style>
