@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
+import IconLink from '../utils/IconLink.vue';
 interface Props {
   imgPath: string
   name: string
@@ -22,9 +23,12 @@ function loadAvatar() {
     </q-item-section>
     <q-item-section>
       <div class="text-h5 q-mt-sm">{{ name }}</div>
-      <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none" style="width: max-content;">
+      <icon-link :href="`https://twitter.com/${twitterName}`" icon="Twitter">
+        @{{ twitterName }}
+      </icon-link>
+      <!-- <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none" style="width: max-content;">
         <q-img src="@/assets/icons/twitter_blue.svg" width="1.3rem"/>@{{ twitterName }}
-      </a>
+      </a> -->
       <div class="q-pt-md">
         <template v-for="line in text" :key="line">
           <p style="width: 100%">{{ line }}</p>
