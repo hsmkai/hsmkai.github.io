@@ -49,9 +49,9 @@ function AgreeBtn() {
       </q-card-section>
 
       <q-card-section>
-        <div style="">
+        <q-scroll-area class="scroll-area">
           <TermsOfUse :product-name="productName"/>
-        </div>
+        </q-scroll-area>
       </q-card-section>
 
       <q-separator inset />
@@ -59,7 +59,7 @@ function AgreeBtn() {
       <q-card-actions>
         <div class="text-center" style="width: 100%;">
           <p class="text-caption">ダウンロードが始まるまでにやや時間がかかります</p>
-          <q-btn label="利用規約に同意する" color="primary" @click="AgreeBtn" v-close-popup class="text-h6"/>
+          <q-btn label="利用規約に同意してダウンロード" color="primary" @click="AgreeBtn" v-close-popup class="text-h6"/>
         </div>
       </q-card-actions>
     </q-card>
@@ -88,3 +88,10 @@ function AgreeBtn() {
     </q-card>
   </q-dialog>
 </template>
+
+<style scoped lang="scss">
+.scroll-area {
+  width: min(500px, 80vw);
+  height: 60vh;
+}
+</style>
