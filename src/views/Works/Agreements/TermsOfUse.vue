@@ -128,7 +128,7 @@ const GeneralProduct = prop.productName ? '本サービス' : '配布物'
     <li>本規約に関して本団体と利用者等との間での論議・訴訟その他一切の紛争については、訴額に応じて、東京簡易裁判所又は東京地方裁判所を第一審の専属的合意管轄裁判所とします｡</li>
   </ol>
 
-  <h3 class="text-red q-mb-none">２０２３年--月--日  施行</h3>
+  <h3 class="q-mb-none">２０２３年５月１１日  施行</h3>
 </template>
 
 <style scoped lang="scss">
