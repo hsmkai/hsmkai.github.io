@@ -16,9 +16,11 @@ defineProps<Prop>()
     </h1>
   </div>
   <div v-if="desc !== void 0" class="q-pt-md q-pb-xl">
-    <template v-for="text in desc" :key="text">
-      <p>{{ text }}</p>
-    </template>
+    <slot name="desc">
+      <template v-for="text in desc" :key="text">
+        <p>{{ text }}</p>
+      </template>
+    </slot>
   </div>
 </template>
 
@@ -27,9 +29,5 @@ h1 {
   font-size: 3.5rem;
   margin-top: 0;
   font-weight: lighter;
-}
-
-p {
-  padding: 0;
 }
 </style>
