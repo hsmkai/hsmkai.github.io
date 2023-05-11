@@ -43,10 +43,12 @@ function AgreeBtn() {
   <q-dialog v-model="showAgreement">
     <q-card>
       <q-card-section class="row items-center q-pb-none">
-        <div class="text-h4">必ずお読みください</div>
+        <div class="q-py-sm text-h4">必ずお読みください</div>
         <q-space />
         <q-btn icon="close" flat round dense v-close-popup />
       </q-card-section>
+
+      <q-separator inset />
 
       <q-card-section>
         <q-scroll-area class="scroll-area">

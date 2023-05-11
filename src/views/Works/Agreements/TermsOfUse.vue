@@ -5,12 +5,12 @@ interface Prop {
 }
 const prop = defineProps<Prop>()
 
-const product = prop.productName ?? '全ての配布物'
+const product = prop.productName ?? '配布物'
 const GeneralProduct = prop.productName ? '本サービス' : '配布物'
 </script>
 
 <template>
-  <h1>{{ product }}利用規約</h1>
+  <h1 class="q-mt-none">{{ product }}利用規約</h1>
   <!-- TODO: 1. か（１）表記の違いを原本に準拠させる -->
   <p>
     この規約は、お客様が、斜向（以下「本団体」）が提供する{{ product }}（以下「{{ GeneralProduct }}」）をご利用頂く際の取扱いにつき定めるものです。
