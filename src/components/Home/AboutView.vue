@@ -5,7 +5,7 @@ import TitleCard from '../utils/TitleCard.vue';
 <template>
   <TitleCard
     title="踏み出せ、新世界へ。"
-    :desc="[
+    :abst="[
       '斜向は様々なアプローチで、ちょっと新しいコンテンツをMinecraftで制作しているグループです。',
       'コマンド、リソースパック、音楽などを用いて新世界(ハスムカイ)へとお連れします。'
     ]"

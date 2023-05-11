@@ -11,7 +11,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
   >
     <TitleCard
       title="プログラムを構築してパズルを解け！"
-      :desc="[
+      :abst="[
         'ここはドローンが飛び回る未来世界。',
         '君はドローン操縦士になるため、この試験飛行場へやってきた。',
         'さぁ、君の手でプログラムを構築し、難解なステージに挑め！'
@@ -24,7 +24,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
     <div class="q-pt-xl">
       <TitleCard
         title="プログラミング"
-        :desc="[
+        :abst="[
           'プログラムの基本は、動作と数値。',
           '動作ブロックと数値ブロックをセットで使うことでドローンを操作できる。',
           '幾つかのルールがあるのでお忘れなく。',
@@ -34,7 +34,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
 
     <TitleCard
       title="ダウンロード"
-      :desc="[
+      :abst="[
         '右下の丸いアイコンから、規約に同意することでダウンロードできます。',
         '対応バージョン：Minecraft 1.15.2 / 1.16 / 1.16.1'  
       ]"

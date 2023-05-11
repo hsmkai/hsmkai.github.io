@@ -10,7 +10,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
   >
     <TitleCard
       title="マインクラフト × 謎解き！"
-      :desc="[
+      :abst="[
         'マインクラフトの全てが展示されている博物館。',
         'そこに迷い込んだあなたは一人の少女と出会う。',
         '「お願い、博物館の時間を動かしたいの！」',

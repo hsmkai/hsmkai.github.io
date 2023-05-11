@@ -15,7 +15,7 @@ function copyMailAddress() {
   <TitleCard
     title="Contact"
     sub-title="お気軽にご連絡ください。"
-    :desc="['斜向へのご相談などがございましたら、お気軽にご連絡ください。']"
+    :abst="['斜向へのご相談などがございましたら、お気軽にご連絡ください。']"
   />
 
   <q-list>

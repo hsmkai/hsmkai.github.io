@@ -25,7 +25,7 @@ function getImgPath(src: string, key: string) {
       <TitleCard
         :title="title.title.toUpperCase()"
         :sub-title="title.subTitle"
-        :desc="title.desc"
+        :abst="title.desc"
       />
       
       <div class="q-gutter-md justify-center">

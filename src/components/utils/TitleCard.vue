@@ -4,7 +4,7 @@ import { defineProps } from 'vue';
 interface Prop {
   title: string,
   subTitle?: string
-  desc?: string[]
+  abst?: string[]
 }
 defineProps<Prop>()
 </script>
@@ -15,9 +15,9 @@ defineProps<Prop>()
       {{ title }} <br v-if="$q.platform.is.mobile"/>{{ subTitle }}
     </h1>
   </div>
-  <div v-if="desc !== void 0" class="q-pt-md q-pb-xl">
-    <slot name="desc">
-      <template v-for="text in desc" :key="text">
+  <div v-if="abst !== void 0" class="q-pt-md q-pb-xl">
+    <slot name="abst">
+      <template v-for="text in abst" :key="text">
         <p>{{ text }}</p>
       </template>
     </slot>

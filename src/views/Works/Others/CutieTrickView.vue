@@ -18,19 +18,15 @@ const videoIds = [
   >
     <TitleCard 
       title="マイクラのハロウィンを更に楽しく！"
-      :desc="[
+      :abst="[
         'かわいい魔女が!?',
         'かわいいピグリンが!?',
         'リソースパックでハロウィンを楽しもう！',
       ]"
     />
 
-    <TitleCard
-      title="かわいいピグリンと一緒に冒険!?"
-      :desc="[
-        ]"
-    >
-      <template v-slot:desc>
+    <TitleCard title="かわいいピグリンと一緒に冒険!?">
+      <template v-slot:abst>
         <p>サバイバルでもかわいいピグリンたちと一緒に冒険したい！！</p>
         <p>そんな願いが叶うデータパック<a href="https://ux.getuploader.com/sayasashi/download/23" target="_blank">『Friendship with Piglin!』</a>を鞘笹さんが配布されています！</p>
         <p>一緒にDLして遊んでみてはいかがでしょうか！</p>
@@ -59,7 +55,7 @@ const videoIds = [
 
     <TitleCard
       title="ダウンロード"
-      :desc="[
+      :abst="[
         '右下の丸いアイコンから、規約に同意することでダウンロードできます。',
         '対応バージョン：Minecraft 1.16.x',
         '必須ソフトウェア：OptiFine',
