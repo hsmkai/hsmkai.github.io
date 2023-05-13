@@ -28,7 +28,7 @@ const videoIds = [
     <TitleCard title="かわいいピグリンと一緒に冒険!?">
       <template v-slot:abst>
         <p>サバイバルでもかわいいピグリンたちと一緒に冒険したい！！</p>
-        <p>そんな願いが叶うデータパック<a href="https://ux.getuploader.com/sayasashi/download/23" target="_blank">『Friendship with Piglin!』</a>を鞘笹さんが配布されています！</p>
+        <p>そんな願いが叶うデータパック<a href="https://sayanosasa.com/e/friendship-with-piglin" target="_blank">『Friendship with Piglin!』</a>を鞘笹さんが配布されています！</p>
         <p>一緒にDLして遊んでみてはいかがでしょうか！</p>
         <br/>
         <p>※『Friendship with Piglin!』は斜向とは無関係です。利用規約などは別途ご確認ください。</p>
