@@ -15,7 +15,7 @@ function loadAvatar() {
 </script>
 
 <template>
-  <q-item class="desktop-only">
+  <q-item class="desktop-only q-py-lg">
     <q-item-section side>
       <q-avatar square size="130px">
         <q-img :src="loadAvatar()" class="avater-img"/>
@@ -26,9 +26,6 @@ function loadAvatar() {
       <icon-link :href="`https://twitter.com/${twitterName}`" icon="Twitter">
         @{{ twitterName }}
       </icon-link>
-      <!-- <a :href="`https://twitter.com/${twitterName}`" target="_blank" class="text-h6 q-pa-none" style="width: max-content;">
-        <q-img src="@/assets/icons/twitter_blue.svg" width="1.3rem"/>@{{ twitterName }}
-      </a> -->
       <div class="q-pt-md">
         <template v-for="line in text" :key="line">
           <p style="width: 100%">{{ line }}</p>

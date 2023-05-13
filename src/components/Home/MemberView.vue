@@ -3,7 +3,7 @@ import Member from './MemberList.vue';
 </script>
 
 <template>
-  <q-list>
+  <q-list separator style="width: max-content;">
     <Member
       img-path="sample.png"
       name="柏餅々々々"
