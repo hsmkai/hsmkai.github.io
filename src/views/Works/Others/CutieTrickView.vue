@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import TitleCard from '@/components/utils/TitleCard.vue';
 import BaseArticle from '@/components/Works/baseArticle.vue';
-import { ref } from 'vue';
+import DefaultCarousel from '@/components/Works/defaultCarousel.vue';
 
-const slide = ref(1)
 const videoIds = [
   'wqiobdp_bnA',
   'di2BPEWqSVY',
@@ -35,23 +34,17 @@ const videoIds = [
       </template>
     </TitleCard>
 
-    <TitleCard title="紹介映像"/>
-    <q-carousel
-      animated
-      v-model="slide"
-      navigation
-      infinite
-      :autoplay="5000"
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      style="height: 100%;"
-    >
-      <template v-for="(id, idx) in videoIds" :key="id">
-        <q-carousel-slide :name="idx">
-          <q-video :src="`https://www.youtube.com/embed/${id}`" class="video"/>
-        </q-carousel-slide>
+    <TitleCard title="紹介映像">
+      <template v-slot:abst>
+        <DefaultCarousel>
+          <template v-for="(id, idx) in videoIds" :key="id">
+            <q-carousel-slide :name="idx">
+              <q-video :src="`https://www.youtube.com/embed/${id}`" style="height: inherit;"/>
+            </q-carousel-slide>
+          </template>
+        </DefaultCarousel>
       </template>
-    </q-carousel>
+    </TitleCard>
 
     <TitleCard
       title="ダウンロード"

@@ -1,10 +1,8 @@
 <script lang="ts" setup>
 import TitleCard from '@/components/utils/TitleCard.vue';
 import BaseArticle from '@/components/Works/baseArticle.vue';
-import { ref } from 'vue';
+import DefaultCarousel from '@/components/Works/defaultCarousel.vue';
 
-const videoSlide = ref(0)
-const figSlide   = ref(1)
 const videoIds = [
   '7xZwQdOsvUM',
   'G52AYzpK6gs',
@@ -27,33 +25,25 @@ const videoIds = [
       ]"
     />
 
-    <TitleCard title="紹介映像"/>
-    <q-carousel
-      animated
-      v-model="videoSlide"
-      navigation
-      infinite
-      :autoplay="5000"
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      style="height: 100%;"
-    >
-      <template v-for="(id, idx) in videoIds" :key="id">
-        <q-carousel-slide :name="idx">
-          <q-video :src="`https://www.youtube.com/embed/${id}`" class="video"/>
-        </q-carousel-slide>
+    <TitleCard title="紹介映像">
+      <template v-slot:abst>
+        <DefaultCarousel>
+          <template v-for="(id, idx) in videoIds" :key="id">
+            <q-carousel-slide :name="idx">
+              <q-video :src="`https://www.youtube.com/embed/${id}`" style="height: inherit;"/>
+            </q-carousel-slide>
+          </template>
+        </DefaultCarousel>
       </template>
-    </q-carousel>
+    </TitleCard>
 
-    <div class="q-pt-xl">
-      <TitleCard
-        title="Real-Time Strategy(RTS)とは？"
-        :abst="[
-          'Real-time Strategy(RTS)とは、リアルタイムで進行する戦況を俯瞰視点で捉え、戦略を立てて敵と戦うゲームです。',
-          'この配布ワールドでは、俯瞰視点ではなく一人称で敵に対応して採掘機を守ります。',
-        ]"
-      />
-    </div>
+    <TitleCard
+      title="Real-Time Strategy(RTS)とは？"
+      :abst="[
+        'Real-time Strategy(RTS)とは、リアルタイムで進行する戦況を俯瞰視点で捉え、戦略を立てて敵と戦うゲームです。',
+        'この配布ワールドでは、俯瞰視点ではなく一人称で敵に対応して採掘機を守ります。',
+      ]"
+    />
 
     <TitleCard
       title="採掘機の防衛"
@@ -61,22 +51,14 @@ const videoIds = [
         '採掘機を作動させると、敵が察知して30秒後に襲撃してきます。',
         '敵は最短経路で採掘機に向かってくるので経路を考え、アームズを駆使して採掘機を守りましょう！',
       ]"
-    />
-    <div class="video">
-      <q-carousel
-        animated
-        v-model="figSlide"
-        navigation
-        infinite
-        :autoplay="5000"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        height="100%"
-      >
-        <q-carousel-slide :name="1" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms1.png" class="video"/>
-        <q-carousel-slide :name="2" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms2.png" class="video"/>
-      </q-carousel>
-    </div>
+    >
+      <template v-slot:abst>
+        <DefaultCarousel>
+          <q-carousel-slide :name="1" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms1.png"/>
+          <q-carousel-slide :name="2" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms2.png"/>
+        </DefaultCarousel>
+      </template>
+    </TitleCard>
 
     <TitleCard
       title="ダウンロード"

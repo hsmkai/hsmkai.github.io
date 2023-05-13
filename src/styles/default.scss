@@ -19,9 +19,10 @@ h1 {
   margin-bottom: 5vh;
 }
 
-// ビデオの標準スタイル
-.video {
-  margin: 0 auto;
+// 記事中のビデオや画像の標準スタイル
+.innerAssets {
+  margin-left: auto;
+  margin-right: auto;
   width: min(900px, 80vw);
   aspect-ratio: 16/9;
 }
