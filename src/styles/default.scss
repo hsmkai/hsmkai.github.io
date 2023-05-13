@@ -12,6 +12,13 @@ h1 {
   font-size: 4rem;
 }
 
+// 文書領域の標準スタイル
+.article {
+  padding-top: 10vh;
+  margin-left: min(100px, 10%);
+  margin-bottom: 5vh;
+}
+
 // ビデオの標準スタイル
 .video {
   margin: 0 auto;
