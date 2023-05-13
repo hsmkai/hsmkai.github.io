@@ -9,7 +9,6 @@ import UseView from '../views/Works/Agreements/UseView.vue'
 import GuideLineView from '../views/Works/Agreements/GuidelineView.vue'
 import CutieTrickView from '../views/Works/Others/CutieTrickView.vue'
 import ContactView from '../views/ContactView.vue'
-import LicenseView from '../views/LicenseView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -56,11 +55,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contact',
     name: 'contact',
     component: ContactView
-  },
-  {
-    path: '/license',
-    name: 'license',
-    component: LicenseView
   },
 ]
 
