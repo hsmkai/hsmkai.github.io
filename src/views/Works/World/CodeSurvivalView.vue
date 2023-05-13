@@ -3,7 +3,8 @@ import TitleCard from '@/components/utils/TitleCard.vue';
 import BaseArticle from '@/components/Works/baseArticle.vue';
 import { ref } from 'vue';
 
-const slide = ref(1)
+const videoSlide = ref(0)
+const figSlide   = ref(1)
 const videoIds = [
   '7xZwQdOsvUM',
   'G52AYzpK6gs',
@@ -29,7 +30,7 @@ const videoIds = [
     <TitleCard title="紹介映像"/>
     <q-carousel
       animated
-      v-model="slide"
+      v-model="videoSlide"
       navigation
       infinite
       :autoplay="5000"
@@ -61,6 +62,21 @@ const videoIds = [
         '敵は最短経路で採掘機に向かってくるので経路を考え、アームズを駆使して採掘機を守りましょう！',
       ]"
     />
+    <div class="video">
+      <q-carousel
+        animated
+        v-model="figSlide"
+        navigation
+        infinite
+        :autoplay="5000"
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        height="100%"
+      >
+        <q-carousel-slide :name="1" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms1.png" class="video"/>
+        <q-carousel-slide :name="2" img-src="@/assets/Works/Worlds/CodeSurvival/HP_CodeSurvival_arms2.png" class="video"/>
+      </q-carousel>
+    </div>
 
     <TitleCard
       title="ダウンロード"
@@ -68,6 +84,7 @@ const videoIds = [
         '右下の丸いアイコンから、規約に同意することでダウンロードできます。',
         '対応バージョン：Minecraft 1.14.4  シングルプレイ専用',
         '必須ソフトウェア：OptiFine',
+        '※なお、本作はアップデートを予定していたため引継ぎアイテムが生成できますが、現在諸事情によりアップデートは無期限延期となっております。ご了承ください。'
       ]"
     />
 

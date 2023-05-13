@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import TitleCard from '@/components/utils/TitleCard.vue';
 import BaseArticle from '@/components/Works/baseArticle.vue';
+import { ref } from 'vue';
+
+const slide = ref(1)
 </script>
 
 <template>
@@ -30,6 +33,21 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
           '幾つかのルールがあるのでお忘れなく。',
         ]"
       />
+      <div class="video">
+        <q-carousel
+          animated
+          v-model="slide"
+          navigation
+          infinite
+          :autoplay="5000"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          height="100%"
+        >
+          <q-carousel-slide :name="1" img-src="@/assets/Works/Worlds/prologram/HP_Prologram_1.png" class="video"/>
+          <q-carousel-slide :name="2" img-src="@/assets/Works/Worlds/prologram/HP_Prologram_2.png" class="video"/>
+        </q-carousel>
+      </div>
     </div>
 
     <TitleCard
