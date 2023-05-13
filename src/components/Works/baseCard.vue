@@ -2,6 +2,7 @@
 import { defineProps } from 'vue';
 
 interface Prop {
+  label: string
   imgsrc: string
   title: string
   text: string[]
@@ -17,7 +18,7 @@ defineProps<Prop>()
         <q-img :src="imgsrc" class="col-8" width="40vw"/>
   
         <q-card-section>
-          <div class="text-overline">配布ワールド</div>
+          <div class="text-overline">{{ label }}</div>
           <div class="text-h5 q-my-md title">{{ title }}</div>
           <template v-for="line in text" :key="line">
             <p class="q-ma-none caption"  style="width: 100%">{{ line }}</p>
@@ -29,7 +30,7 @@ defineProps<Prop>()
     <div class="mobile-only">
       <q-img :src="imgsrc"/>
       <q-card-section>
-        <div class="text-overline">配布ワールド</div>
+        <div class="text-overline">{{}}</div>
         <div class="text-h4">{{ title }}</div>
       </q-card-section>
       <q-card-section class="q-pt-none">

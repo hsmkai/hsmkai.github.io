@@ -1,8 +1,9 @@
 interface iTitle {
   [name: string]: {
     title: string,
-    subTitle: string
-    desc: string[]
+    subTitle: string,
+    desc: string[],
+    cardLabel: string,
   }
 }
 
@@ -19,17 +20,20 @@ export const titles: iTitle = {
   'world': {
     title: 'world',
     subTitle: '個性豊かな新世界。',
-    desc: ['斜向がお届けする配布ワールドの数々をご紹介。']
+    desc: ['斜向がお届けする配布ワールドの数々をご紹介。'],
+    cardLabel: '配布ワールド'
   },
   'other': {
     title: 'others',
     subTitle: '世界を彩るコンテンツ。',
-    desc: ['Minecraftの世界を彩る様々なコンテンツや斜向の創作物をご紹介。']
+    desc: ['Minecraftの世界を彩る様々なコンテンツや斜向の創作物をご紹介。'],
+    cardLabel: 'リソースパック'
   },
   'agreement': {
     title: 'Agreements',
     subTitle: '各種規約',
-    desc: []
+    desc: [],
+    cardLabel: '規約'
   },
 }
 
