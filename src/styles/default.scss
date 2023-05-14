@@ -20,8 +20,8 @@ h3 {
 
 // 文書領域の標準スタイル
 .article {
-  padding-top: 10vh;
-  margin-left: min(100px, 10%);
+  margin-top: calc(min(100px, 10vw) / 2);
+  margin-left: min(100px, 10vw);
   margin-bottom: 5vh;
 }
 

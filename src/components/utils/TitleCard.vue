@@ -12,7 +12,7 @@ defineProps<Prop>()
 <template>
   <div class="row vertical-top q-pa-none justify-between">
     <h1 class="q-ma-none">
-      {{ title }} <br v-if="$q.platform.is.mobile"/>{{ subTitle }}
+      {{ title }}<span v-show="subTitle !== void 0">_</span><br v-if="$q.platform.is.mobile"/>{{ subTitle }}
     </h1>
   </div>
   <div class="q-pt-md q-pb-xl">
@@ -28,5 +28,10 @@ h1 {
   font-size: 3.5rem;
   margin-top: 0;
   font-weight: lighter;
+  line-height: 2em;
+  
+  &::first-line {
+    line-height: 1em;
+  }
 }
 </style>

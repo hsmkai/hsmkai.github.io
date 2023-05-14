@@ -93,19 +93,19 @@ export const contents: iContent = {
   'agreement': [
     {
       title: 'ガイドライン',
-      imgsrc: 'default.png',
+      imgsrc: 'default.svg',
       to: 'guide',
       text: []
     },
     {
       title: '配布物利用規約',
-      imgsrc: 'default.png',
+      imgsrc: 'default.svg',
       to: 'terms-of-use',
       text: []
     },
     {
       title: '投稿規約',
-      imgsrc: 'default.png',
+      imgsrc: 'default.svg',
       to: 'broadcast',
       text: [
         'ロゴのダウンロードもこちらから'

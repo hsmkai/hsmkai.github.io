@@ -33,7 +33,7 @@ import IconLink from '@/components/utils/IconLink.vue';
     <br>
     <p>以上の事柄をお守りいただいた上で、斜向が提供する配布ワールドをはじめとする様々な作品をお楽しみください！</p>
 
-    <h3>２０２３年５月１１日  施行</h3>
+    <h3>２０２３年５月１５日  施行</h3>
   </div>
 </template>
 

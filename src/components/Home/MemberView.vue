@@ -5,7 +5,7 @@ import Member from './MemberList.vue';
 <template>
   <q-list separator style="width: max-content;">
     <Member
-      img-path="sample.png"
+      img-path="kswmcHi.png"
       name="柏餅々々々"
       twitter-name="kswmcHi"
       :text="[
@@ -19,21 +19,19 @@ import Member from './MemberList.vue';
       name="CivilTT"
       twitter-name="CivilT_T"
       :text="[
-        'マイクラの「外」の住人',
         '「外」から「内」に入っていくためのツール (ServerStarter) を主に開発中',
         '製作物の簡単な実装や、ホームページ開発を担当',
         '得意技はロールバックとTODO放置'
       ]"
     />
     <Member
-      img-path="sample.png"
+      img-path="txkodo.png"
       name="古銅"
       twitter-name="txkodo"
       :text="[
-        '善くも悪くも自由人で、テクスチャ全般描いてまーす。',
-        'テクスチャ変えるだけで別ゲーと化すのもマイクラの魅力ですよね！',
-        'コマンドも担当していますがまだまだ技術不足です。',
-        'もっとできたら楽しいんだろうなぁ...'
+        '謎のリポジトリを生み出し続ける暴走枠 & 技術枠。',
+        '高い起電力でもってリソースパック/データパックのメイン開発にあたるが道半ばで力尽きる。',
+        '設定と雰囲気は譲らない世界観至上主義の一族。',
       ]"
     />
     <Member

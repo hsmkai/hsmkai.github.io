@@ -21,6 +21,9 @@ const generalProduct = prop.productName ? '本サービス' : '配布物'
   <p>
     なお、<a href="/works/broadcast">投稿規約</a>は、本規約と一体となって{{ generalProduct }}の利用に適用されるものとします。
   </p>
+  <p>
+    また、本サイトで配布される配布物はMojang ABが作成または承認したものではなく、当団体がプレイアブルコンテンツの提供を目的として独自に企画、開発したものです。
+  </p>
 
   <h2>第１条（定義）</h2>
   <p>
@@ -141,5 +144,5 @@ const generalProduct = prop.productName ? '本サービス' : '配布物'
     <li>本規約に関して当団体と利用者等との間での論議・訴訟その他一切の紛争については、訴額に応じて、東京簡易裁判所又は東京地方裁判所を第一審の専属的合意管轄裁判所とします｡</li>
   </ol>
 
-  <h3 class="q-mb-none">２０２３年５月１４日  施行</h3>
+  <h3 class="q-mb-none">２０２３年５月１５日  施行</h3>
 </template>

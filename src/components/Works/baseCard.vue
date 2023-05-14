@@ -18,7 +18,7 @@ defineProps<Prop>()
         <q-img :src="imgsrc" class="col-8" width="40vw"/>
   
         <q-card-section>
-          <div class="text-overline">{{ label }}</div>
+          <div class="text-overline"><q-badge color="grey-10" class="q-pa-sm" style="font-weight: bold;">{{ label }}</q-badge></div>
           <div class="text-h5 q-my-md title">{{ title }}</div>
           <template v-for="line in text" :key="line">
             <p class="q-ma-none caption"  style="width: 100%">{{ line }}</p>

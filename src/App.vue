@@ -37,20 +37,29 @@ const menuItem = [
       class="absolute-left v-line"
       style="top: 50px"
     />
-    <p v-show="$route.path === '/'" class="v-line v-line-text q-ma-none absolute-left">
+    <p v-show="$route.path === '/' && $q.platform.is.desktop" class="v-line v-line-text q-ma-none absolute-left">
       Scroll down →
     </p>
     <q-separator
+      v-show="$q.platform.is.desktop"
       vertical
       color="black"
       size="1.5pt"
       class="absolute-left v-line"
-      style="top: 100vh;"
+      style="top: 100vh"
+    />
+    <q-separator
+      v-show="$q.platform.is.mobile"
+      vertical
+      color="black"
+      size="1.5pt"
+      class="absolute-left v-line"
+      style="top: calc(30vh + 50px)"
     />
 
     <!-- ヘッダー -->
-    <div class="header">
-      <q-toolbar style="padding-right: 3vw;">
+    <q-header reveal class="bg-black">
+      <q-toolbar>
         <q-btn flat to="/">
           <q-img src="@/assets/logo/header.svg" width="200px"/>
         </q-btn>
@@ -68,13 +77,18 @@ const menuItem = [
             <!-- Twitter: https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf -->
             <!-- YouTube: https://www.youtube.com/intl/ALL_jp/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors -->
             <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs snsBtn">
-              <q-avatar square size="31px">
+              <q-avatar square size="25px">
                 <q-img src="@/assets/icons/twitter_white.svg"/>
               </q-avatar>
             </q-btn>
             <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs snsBtn">
-              <q-avatar square size="31px">
+              <q-avatar square size="25px">
                 <q-img src="@/assets/icons/youtube.svg"/>
+              </q-avatar>
+            </q-btn>
+            <q-btn square outline href="https://www.nicovideo.jp/user/91326809/video" target="_blank" class="q-mx-xs snsBtn">
+              <q-avatar square>
+                <q-img src="@/assets/icons/nikodou.png"/>
               </q-avatar>
             </q-btn>
           </div>
@@ -83,6 +97,8 @@ const menuItem = [
         <q-btn flat dense round icon="menu" size="20px" @click="menuOpen = !menuOpen" class="lt-md text-white"/>
       </q-toolbar>
       <q-separator color="black" size="1.5pt"/>
+    </q-header>
+    <div class="header">
     </div>
 
     <!-- スマホ画面時のメニューによって開くDrawer -->
@@ -121,13 +137,18 @@ const menuItem = [
             </template>
             <div class="q-pr-md row desktop-only q-pl-md">
               <q-btn square outline href="https://twitter.com/hsmkai" target="_blank" class="q-mx-xs snsBtn">
-                <q-avatar square size="31px">
+                <q-avatar square size="25px">
                   <q-img src="@/assets/icons/twitter_white.svg"/>
                 </q-avatar>
               </q-btn>
               <q-btn square outline href="https://www.youtube.com/channel/UCRb01Kwyx9638bL4AtaYYfA" target="_blank" class="q-mx-xs snsBtn">
-                <q-avatar square size="31px">
+                <q-avatar square size="25px">
                   <q-img src="@/assets/icons/youtube.svg"/>
+                </q-avatar>
+              </q-btn>
+              <q-btn square outline href="https://www.nicovideo.jp/user/91326809/video" target="_blank" class="q-mx-xs snsBtn">
+                <q-avatar square size="40px">
+                  <q-img src="@/assets/icons/nikodou.png"/>
                 </q-avatar>
               </q-btn>
             </div>
@@ -147,6 +168,7 @@ const menuItem = [
 <style lang="scss" scoped>
 .header {
   width: 100%;
+  height: 4vh;
   top: 0;
   position: absolute;
   background-color: rgba($color: black, $alpha: 1);
@@ -170,7 +192,7 @@ const menuItem = [
 }
 
 .v-line {
-  margin-left: min(50px, 5%);
+  margin-left: min(50px, 5vw);
 }
 .v-line-text {
   // 縦書き
@@ -180,7 +202,7 @@ const menuItem = [
   // 文字
   color: white;
   font-size: 2rem;
-  width: 1.1em;
+  width: 1.2em;
 
   // 画面の下に文字を固定する
   text-align: right;

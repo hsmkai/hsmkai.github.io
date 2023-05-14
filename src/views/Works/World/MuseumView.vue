@@ -6,7 +6,7 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
 <template>
   <BaseArticle
     product-name="マイクラ博物館の謎"
-    :imgsrc="require('@/assets/Works/Worlds/museum.png')"
+    :imgsrc="require('@/assets/Home/museum.png')"
   >
     <TitleCard
       title="マインクラフト × 謎解き！"

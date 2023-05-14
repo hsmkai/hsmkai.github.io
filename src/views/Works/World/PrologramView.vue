@@ -7,7 +7,7 @@ import DefaultCarousel from '@/components/Works/defaultCarousel.vue';
 <template>
   <BaseArticle
     product-name="prologram++"
-    :imgsrc="require('@/assets/Works/Worlds/prologram.png')"
+    :imgsrc="require('@/assets/Home/prologram.png')"
     download-link="https://drive.google.com/uc?id=1af7lR06kG7eW1WpDktaBGt71GvWx1CA9"
   >
     <TitleCard

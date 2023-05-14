@@ -17,7 +17,7 @@ function loadAvatar() {
 <template>
   <q-item class="desktop-only q-py-lg">
     <q-item-section side>
-      <q-avatar square size="130px">
+      <q-avatar square size="180px">
         <q-img :src="loadAvatar()" class="avater-img"/>
       </q-avatar>
     </q-item-section>
@@ -37,7 +37,7 @@ function loadAvatar() {
   <q-expansion-item class="mobile-only" style="width: 80vw;">
     <template v-slot:header>
       <q-item-section side>
-        <q-avatar square size="130px">
+        <q-avatar square size="120px">
           <q-img :src="loadAvatar()" class="avater-img"/>
         </q-avatar>
       </q-item-section>
