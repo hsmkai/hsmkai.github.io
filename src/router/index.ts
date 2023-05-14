@@ -7,6 +7,7 @@ import PrologramView from '../views/Works/World/PrologramView.vue'
 import CodeSurvivalView from '../views/Works/World/CodeSurvivalView.vue'
 import UseView from '../views/Works/Agreements/UseView.vue'
 import GuideLineView from '../views/Works/Agreements/GuidelineView.vue'
+import BroadcastView from '../views/Works/Agreements/BroadcastView.vue'
 import CutieTrickView from '../views/Works/Others/CutieTrickView.vue'
 import ContactView from '../views/ContactView.vue'
 
@@ -48,6 +49,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'guide',
         component: GuideLineView
+      },
+      {
+        path: 'broadcast',
+        component: BroadcastView
       },
     ]
   },
