@@ -34,7 +34,7 @@ function loadAvatar() {
     </q-item-section>
   </q-item>
 
-  <q-expansion-item class="mobile-only">
+  <q-expansion-item class="mobile-only" style="width: 80vw;">
     <template v-slot:header>
       <q-item-section side>
         <q-avatar square size="130px">
