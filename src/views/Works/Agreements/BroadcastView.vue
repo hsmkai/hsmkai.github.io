@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import LogoCard from '@/components/Works/Agreements/logoCard.vue';
-import TitleCard from '@/components/utils/TitleCard.vue';
-
 </script>
 
 <template>
@@ -75,31 +72,19 @@ import TitleCard from '@/components/utils/TitleCard.vue';
       <li>上記の他、当団体が不適切と判断する行為</li>
     </ol>
 
-    <h3 class="q-mb-none">２０２３年５月１４日  施行</h3>
+    <h3 class="q-mb-none">２０２３年５月１５日  施行</h3>
 
     <q-separator inset class="q-my-lg"/>
 
-    <TitleCard title="ロゴの取得">
-      <template v-slot:abst>
-        <div class="row justify-center">
-          <LogoCard imgFileName="header" btnLabel="ヘッダーロゴのダウンロード"/>
-          <LogoCard imgFileName="footer" btnLabel="フッターロゴのダウンロード"/>
-        </div>
-      </template>
-    </TitleCard>
+    <h1>ロゴのダウンロード</h1>
+    <div class="row justify-center">
+      <q-card class="q-pa-md" style="width: min(80%, 400px);">
+        <q-img src="@/assets/logo/footer_black.svg"/>
+
+        <q-card-actions align="center" class="q-pt-xl">
+          <q-btn label="ダウンロード" color="primary" size="1.5rem" href="/download/logo.zip"/>
+        </q-card-actions>
+      </q-card>      
+    </div>
   </div>
 </template>
-
-<style scoped lang="scss">
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-</style>
