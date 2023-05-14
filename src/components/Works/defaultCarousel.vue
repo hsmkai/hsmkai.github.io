@@ -22,6 +22,11 @@ const slide = ref(prop.startIdx ?? 1)
       height="100%"
     >
       <slot/>
+
+      <template v-slot:navigation-icon="{ active, btnProps, onClick }">
+        <q-btn v-if="active" size="5pt" :icon="btnProps.icon" color="primary" flat round dense @click="onClick" />
+        <q-btn v-else size="5pt" :icon="btnProps.icon" color="grey-5" flat round dense @click="onClick" />
+      </template>
     </q-carousel>
   </div>
 </template>
