@@ -6,8 +6,7 @@
     (function (l) {
       console.log(l)
       console.log(l.origin, l.pathname)
-      const parts = l.pathname.split('/')
-      l.replace(l.origin + l.pathname + "/" + l.hash);
+      l.replace(l.origin + "/#" + l.pathname);
     })(window.location);
   </script>
 </head>
