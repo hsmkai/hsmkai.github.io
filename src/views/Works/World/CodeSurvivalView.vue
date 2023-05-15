@@ -27,13 +27,9 @@ const videoIds = [
 
     <TitleCard title="紹介映像">
       <template v-slot:abst>
-        <DefaultCarousel>
-          <template v-for="(id, idx) in videoIds" :key="id">
-            <q-carousel-slide :name="idx">
-              <q-video :src="`https://www.youtube.com/embed/${id}`" style="height: inherit;"/>
-            </q-carousel-slide>
-          </template>
-        </DefaultCarousel>
+        <template v-for="id in videoIds" :key="id">
+          <q-video :src="`https://www.youtube.com/embed/${id}`" class="innerAssets q-pa-md"/>
+        </template>
       </template>
     </TitleCard>
 
