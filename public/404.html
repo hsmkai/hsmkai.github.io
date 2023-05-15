@@ -4,9 +4,8 @@
 <head>
   <script>
     (function (l) {
-      console.log(l.origin, l.pathname)
-      const parts = l.pathname.split('/')
-      l.replace(l.origin + "/" + parts[1] + "/#" + parts.slice(2).join('/'));
+      // 「/#」の前にホーム（一番最初のページ）のURLを入れ、その後ろにアクセスしたいページのURLを入れる
+      l.replace(l.origin + "/#" + l.pathname);
     })(window.location);
   </script>
 </head>
