@@ -19,7 +19,7 @@ const generalProduct = prop.productName ? '本サービス' : '配布物'
     本規約に同意した上で当団体が提供する製品をご利用ください。
   </p>
   <p>
-    なお、<a href="/works/broadcast">投稿規約</a>は、本規約と一体となって{{ generalProduct }}の利用に適用されるものとします。
+    なお、<router-link to="broadcast">投稿規約</router-link>は、本規約と一体となって{{ generalProduct }}の利用に適用されるものとします。
   </p>
   <p>
     また、本サイトで配布される配布物はMojang ABが作成または承認したものではなく、当団体がプレイアブルコンテンツの提供を目的として独自に企画、開発したものです。
@@ -135,7 +135,7 @@ const generalProduct = prop.productName ? '本サービス' : '配布物'
 
   <h2>第１２条（当団体への連絡方法）</h2>
   <p>
-    {{ generalProduct }}に関する利用者の当団体へのご連絡・お問い合わせは、<a href="/contact">当団体が本サイト上で指定する方法</a>により行うものとします。
+    {{ generalProduct }}に関する利用者の当団体へのご連絡・お問い合わせは、<router-link to="/contact">当団体が本サイト上で指定する方法</router-link>により行うものとします。
   </p>
 
   <h2>第１３条（準拠法、管轄裁判所）</h2>

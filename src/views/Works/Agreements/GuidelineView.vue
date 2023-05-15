@@ -29,7 +29,7 @@ import IconLink from '@/components/utils/IconLink.vue';
     <p>Twitterや各種SNSに投稿する際には「#斜向」や各作品のタグを付けていただけますと当団体の方で認知しやすくなり、制作の励みになります！</p>
     <br>
     <br>
-    <p>なお、動画やSNSへの投稿に対して、斜向では<a href="/works/broadcast">別途規約</a>を定めていますので、こちらもご確認ください。</p>
+    <p>なお、動画やSNSへの投稿に対して、斜向では<router-link to="broadcast">別途規約</router-link>を定めていますので、こちらもご確認ください。</p>
     <br>
     <p>以上の事柄をお守りいただいた上で、斜向が提供する配布ワールドをはじめとする様々な作品をお楽しみください！</p>
 
