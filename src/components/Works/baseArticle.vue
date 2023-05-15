@@ -17,7 +17,5 @@ defineProps<Prop>()
     <slot></slot>
   </div>
 
-  <q-page-container>
-    <download-btn :product-name="productName" :download-link="downloadLink"/>
-  </q-page-container>
+  <download-btn :product-name="productName" :download-link="downloadLink"/>
 </template>
