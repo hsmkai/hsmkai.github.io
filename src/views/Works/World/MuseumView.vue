@@ -21,7 +21,11 @@ import BaseArticle from '@/components/Works/baseArticle.vue';
       ]"
     />
 
-    <TitleCard title="1stPV"/>
+    <TitleCard title="1stPV">
+      <template v-slot:abst>
+        <q-video src="https://www.youtube.com/embed/EYcTYiIgwIs" class="innerAssets"/>
+      </template>
+    </TitleCard>
 
     <TitleCard title="続報をお楽しみに！"/>
   </BaseArticle>
