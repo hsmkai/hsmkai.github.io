@@ -4,8 +4,7 @@
 <head>
   <script>
     (function (l) {
-      console.log(l)
-      console.log(l.origin, l.pathname)
+      // 「/#」の前にホーム（一番最初のページ）のURLを入れ、その後ろにアクセスしたいページのURLを入れる
       l.replace(l.origin + "/#" + l.pathname);
     })(window.location);
   </script>
