@@ -31,7 +31,7 @@ function getImgPath(src: string, key: string) {
       <div class="q-gutter-lg justify-center q-pb-xl">
         <template v-for="card in contents[key]" :key="card">
           <BaseCard
-            :label="title.cardLabel"
+            :label="card.cardLabel ?? title.cardLabel"
             :to-name="card.to"
             :imgsrc="getImgPath(card.imgsrc, key.toString())"
             :title="card.title"

@@ -12,7 +12,8 @@ interface iContent {
     title: string,
     imgsrc: string,
     to: string,
-    text: string[]
+    text: string[],
+    cardLabel?: string,
   }[]
 }
 
