@@ -35,7 +35,7 @@ import Member from './MemberList.vue';
       ]"
     />
     <Member
-      img-path="sample.png"
+      img-path="24ki05.jpg"
       name="二式"
       twitter-name="24ki05"
       :text="[
