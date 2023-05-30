@@ -14,7 +14,7 @@ const videoIds = [
   <BaseArticle
     product-name="Code:Survival"
     :imgsrc="require('@/assets/Works/Worlds/CodeSurvival.jpg')"
-    download-link="https://drive.google.com/uc?id=1ONEUychp5ug8ADqWxM2xtkqgs3NzhIKp"
+    download-link="https://drive.google.com/uc?id=1D5p-Rag4IQteEbSkkfju4fq4LFcpzIFS"
   >
     <TitleCard
       title="荒廃した世界で一人称RTS!"
