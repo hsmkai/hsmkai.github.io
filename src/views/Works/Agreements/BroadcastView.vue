@@ -83,7 +83,7 @@
         <q-img src="@/assets/logo/footer_black.svg"/>
 
         <q-card-actions align="center" class="q-pt-xl">
-          <q-btn label="ダウンロード" color="primary" size="1.5rem" href="/download/logo.zip"/>
+          <q-btn label="ダウンロード" color="primary" size="1.5rem" href="/download/斜向ロゴ.zip"/>
         </q-card-actions>
       </q-card>      
     </div>
