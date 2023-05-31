@@ -22,7 +22,7 @@ const generalProduct = prop.productName ? '本サービス' : '配布物'
     なお、<router-link to="broadcast">投稿規約</router-link>は、本規約と一体となって{{ generalProduct }}の利用に適用されるものとします。
   </p>
   <p>
-    また、本サイトで配布される配布物はMojang ABが作成または承認したものではなく、当団体がプレイアブルコンテンツの提供を目的として独自に企画、開発したものです。
+    また、本サイトで配布される配布物はMojang ABまたはMinecraftが作成または承認したものではなく、非商業目的物に該当するものです。
   </p>
 
   <h2>第１条（定義）</h2>
