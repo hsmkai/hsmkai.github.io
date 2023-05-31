@@ -45,7 +45,7 @@ import DefaultCarousel from '@/components/Works/defaultCarousel.vue';
       title="ダウンロード"
       :abst="[
         '右下の丸いアイコンから、規約に同意することでダウンロードできます。',
-        'Minecraft 1.15.2 / 1.16 / 1.16.1　シングルプレイ/マルチプレイ対応'  
+        'Minecraft 1.15.2 / 1.16 / 1.16.1 シングルプレイ/マルチプレイ対応'  
       ]"
     />
   </BaseArticle>
